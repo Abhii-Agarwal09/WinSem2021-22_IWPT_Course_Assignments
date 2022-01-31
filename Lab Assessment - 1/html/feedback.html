@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="../styles.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap"
+            rel="stylesheet"
+        />
+        <title>PineWood School | Feedback</title>
+    </head>
+    <body>
+        <!-- Navbar -->
+        <nav class="navbar">
+            <div class="navbar__logo-container">
+                <a href="#" class="navbar__logo">
+                    <img
+                        src="../pinewood-logo.png"
+                        alt="pinewood school logo"
+                    />
+                </a>
+            </div>
+            <ul class="navbar__list">
+                <li>
+                    <a href="/" class="navbar__list-item">Home</a>
+                </li>
+                <li>
+                    <a href="./departments.html" class="navbar__list-item"
+                        >Departments</a
+                    >
+                </li>
+                <li>
+                    <a href="./faculties.html" class="navbar__list-item"
+                        >Faculties
+                    </a>
+                </li>
+                <li>
+                    <a href="./results.html" class="navbar__list-item"
+                        >Results
+                    </a>
+                </li>
+                <li>
+                    <a href="./achievements.html" class="navbar__list-item"
+                        >Achievements
+                    </a>
+                </li>
+                <li>
+                    <a href="./feedback.html" class="navbar__list-item"
+                        >Feedback
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+        <form action="post" class="feedback-form">
+            <div class="heading-container">
+                <h1>Please provide your valuable feedback</h1>
+            </div>
+            <div class="main-form-container">
+                <div class="name-container container">
+                    <label for="name">Name: </label>
+                    <input type="text" id="name" required />
+                </div>
+                <div class="email-container container">
+                    <label for="email">Email: </label>
+                    <input type="email" name="email" id="email" required />
+                </div>
+                <div class="password-container container">
+                    <label for="password">Password: </label>
+                    <input
+                        type="password"
+                        name="password"
+                        id="password"
+                        required
+                    />
+                </div>
+                <div class="phone-container container">
+                    <label for="phone">Phone: </label>
+                    <input type="number" id="phone" required />
+                </div>
+                <div class="dob-container container">
+                    <label for="dob">DOB: </label>
+                    <input type="date" name="dob" id="dob" required />
+                </div>
+                <div class="message-container container">
+                    <label for="message">Message: </label>
+                    <textarea
+                        name="message"
+                        id="message"
+                        cols="20"
+                        rows="5"
+                    ></textarea>
+                </div>
+                <div class="btn-container container">
+                    <button type="reset">Reset</button>
+                    <button type="submit">Submit</button>
+                </div>
+            </div>
+        </form>
+        <footer class="footer">
+            <h4>Made by Abhishek Agarwal (20BDS0070)</h4>
+        </footer>
+    </body>
+</html>

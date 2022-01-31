@@ -1,0 +1,72 @@
+/* .animation {
+    width: 200px;
+    height: 200px;
+    animation: move infinite 1s;
+    animation-direction: alternate;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+@keyframes move {
+    0% {
+        border-radius: 0;
+        background-color: red;
+        top: 0;
+        left: 0;
+    } 
+    100% {
+        width: 0;
+        height: 0;
+        top: 100px;
+        left: 100px;
+        background-color: red;
+    }
+} */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.template {
+    border: 2px solid red;
+    display: flex;
+    flex-direction: column;
+}
+
+.template-header {
+    border: 2px solid green;
+}
+
+.header-main,
+.header-secondary {
+    border: 2px solid black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+
+.main-heading {
+    text-align: center;
+}
+
+.main-content {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    border: 2px solid green;
+}
+
+.main-content-text {
+    border: 2px solid red;
+}
