@@ -13,10 +13,14 @@ let imagesArrayLength = imagesArray.length;
 
 // Function to go to next image
 const next = (event) => {
+    console.log(event);
     // Increasing image index by 1
+    console.log('Current image index: ' + currentImageIndex);
     currentImageIndex++;
+    console.log('Current image index after increment: ' + currentImageIndex);
     // Calculating the new image index
     const newImageIndex = currentImageIndex % imagesArrayLength;
+    console.log('New image index: ' + newImageIndex);
     // Setting the new source of image using new index
     carouselImage.src = `../assets/${imagesArray[newImageIndex]}`;
     // Setting the image counter
