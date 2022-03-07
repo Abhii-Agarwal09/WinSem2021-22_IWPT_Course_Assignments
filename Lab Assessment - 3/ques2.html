@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Lab Assessment 3</title>
+    </head>
+    <body>
+        <h1>Favourite movies</h1>
+        <form class="container movie">
+            <p>
+                <label>Movie Name</label>
+                <input class="input" type="text" id="movieName" />
+            </p>
+            <p>
+                <label>Rating</label>
+                <input class="input" type="number" id="rating" />
+            </p>
+            <button type="button" class="btn" id="add-movie">Add</button>
+        </form>
+        <br />
+        <input
+            type="button"
+            onclick="sortByMovie()"
+            value="sort by movie"
+            id="movie_order"
+        />
+        <input
+            type="button"
+            onclick="sortByRating()"
+            value="sort by rating"
+            id="rating-order"
+        />
+        <br />
+        <br />
+        <table class="tbl" id="movieList">
+            <thead>
+                <tr>
+                    <th nowrap>Serial No.</th>
+                    <th nowrap>Movie Name</th>
+                    <th nowrap>Rating</th>
+                    <th nowrap>Delete</th>
+                </tr>
+            </thead>
+            <tbody id="table-main"></tbody>
+        </table>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="index.js"></script>
+    </body>
+</html>
